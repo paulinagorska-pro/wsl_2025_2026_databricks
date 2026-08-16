@@ -69,7 +69,7 @@ Landing (raw JSON on Volumes)
 ## Key analytical concepts
  
 ### Pressure index
-A per-minute, per-team index provided by Sportmonks that quantifies territorial and ball-pressure intensity. Values are bounded but can occasionally exceed 100 (documented and investigated in notebook 13).
+A per-minute, per-team index provided by Sportmonks that quantifies territorial and ball-pressure intensity. Values are bounded but can occasionally exceed 100.
  
 ### Anti-leakage feature design (notebook 09)
 All pressure features use **only observations from minutes ≤ t−1** as predictors for events in minute t. The current-minute pressure value is deliberately excluded from the feature table to prevent data leakage in any downstream model.
